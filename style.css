@@ -120,3 +120,92 @@ button.button-danger {
 .box.filled {
     background-color: blue;
 }
+
+.banner {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-areas: 
+        "icon head"
+        ".... desc";
+    align-items: center;
+    gap: 1em;
+    padding: 1.2em;
+    font-size: 1rem;
+    background: #ECFDF5;
+    border-radius: .375em;
+    margin-bottom: 10px;
+}
+.banner--no--desc {
+    grid-template-areas: 
+        "icon head";
+}
+.banner--icon {
+    grid-area: icon;
+    margin: 0;
+    /* color:#34D399; */
+
+}
+.banner--heading {
+    grid-area: head;
+    margin: 0;
+    font-size: inherit;
+    font-weight: 600;
+    /* color: #065F46; */
+}
+.banner--description {
+    grid-area: desc;
+    margin: 0;
+    font-size: inherit;
+    /* color: #047857; */
+}
+.banner--background--warn {
+    background-color: #FFFBEB;
+}
+.banner--background--error {
+    background-color: #FEF2F2
+}
+.banner--background--success {
+    background-color: #ECFDF5;
+}
+.banner--background--info {
+    background-color: #EFF6FF;
+}
+.banner--icon--warn {
+    color: #FBBF24;
+}
+
+.banner--icon--error {
+    color: #F87171;
+}
+
+.banner--icon--info {
+    color: #60A5FA;
+}
+
+.banner--icon--success {
+    color: #34D399;
+}
+.banner--heading--warn{
+    color: #92400E;
+}
+.banner--heading--error{
+    color: #92400E;
+}
+.banner--heading--info{
+    color: #1E40AF
+}
+.banner--heading--success {
+    color: #065F46
+}
+.banner--description--warn {
+    color: #B45309;
+}
+.banner--description--error {
+    color:#B45309;
+}
+.banner--description--info {
+    color:#1C51B9;
+}
+.banner--description--success {
+    color:#047857;
+}
